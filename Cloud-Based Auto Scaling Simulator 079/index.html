@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudScale | Auto Scaling Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="brand">
+            <div class="cloud-logo">☁</div>
+
+            <div>
+                <h2>CloudScale</h2>
+                <span>Auto Scaling Platform</span>
+            </div>
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            System Online
+        </div>
+
+    </nav>
+
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="tag">
+                CLOUD COMPUTING PROJECT
+            </div>
+
+            <h1>
+                Cloud-Based
+                <span>Auto Scaling</span>
+                Simulator
+            </h1>
+
+            <p>
+                A professional simulation dashboard for monitoring
+                cloud workload and managing virtual server resources.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="icon blue">
+                    ◉
+                </div>
+
+                <div>
+                    <p>CPU UTILIZATION</p>
+                    <h2>68%</h2>
+                    <span class="positive">Normal workload</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="icon purple">
+                    ▣
+                </div>
+
+                <div>
+                    <p>ACTIVE SERVERS</p>
+                    <h2>4</h2>
+                    <span class="positive">All servers healthy</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="icon green">
+                    ☁
+                </div>
+
+                <div>
+                    <p>CLOUD STATUS</p>
+                    <h2 class="online">ONLINE</h2>
+                    <span class="positive">Infrastructure healthy</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main Content -->
+        <section class="content-grid">
+
+
+            <!-- Simulator -->
+            <div class="card simulator">
+
+                <div class="card-header">
+
+                    <div>
+                        <span class="section-label">
+                            CONTROL PANEL
+                        </span>
+
+                        <h2>Workload Simulator</h2>
+                    </div>
+
+                    <span class="live">
+                        ● LIVE
+                    </span>
+
+                </div>
+
+
+                <p class="description">
+                    Simulate different levels of CPU utilization
+                    and observe how cloud resources respond.
+                </p>
+
+
+                <!-- CPU Meter -->
+                <div class="cpu-box">
+
+                    <div>
+
+                        <span class="small-text">
+                            Current CPU Load
+                        </span>
+
+                        <div class="cpu-value">
+                            68%
+                        </div>
+
+                    </div>
+
+                    <div class="normal">
+                        NORMAL LOAD
+                    </div>
+
+                </div>
+
+
+                <!-- Slider -->
+                <div class="slider-area">
+
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="68"
+                    >
+
+                    <div class="slider-values">
+
+                        <span>0%</span>
+                        <span>25%</span>
+                        <span>50%</span>
+                        <span>75%</span>
+                        <span>100%</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Button -->
+                <button class="scale-button">
+
+                    <span>
+                        Run Auto Scaling Simulation
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- Result -->
+                <div class="result">
+
+                    <div class="result-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            No Scaling Required
+                        </strong>
+
+                        <p>
+                            Current server capacity is sufficient
+                            for the simulated workload.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Rules -->
+            <div class="card rules">
+
+                <span class="section-label">
+                    SCALING POLICY
+                </span>
+
+                <h2>Auto Scaling Rules</h2>
+
+                <p class="description">
+                    Resources are automatically adjusted based
+                    on CPU utilization thresholds.
+                </p>
+
+
+                <div class="rule">
+
+                    <div class="rule-icon green-bg">
+                        ↓
+                    </div>
+
+                    <div>
+
+                        <div class="rule-title">
+                            Scale Down
+
+                            <span>
+                                &lt; 30%
+                            </span>
+                        </div>
+
+                        <p>
+                            Remove unnecessary server instances
+                            during low workload periods.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-icon blue-bg">
+                        =
+                    </div>
+
+                    <div>
+
+                        <div class="rule-title">
+                            Maintain
+
+                            <span>
+                                30–70%
+                            </span>
+                        </div>
+
+                        <p>
+                            Maintain the current number of
+                            cloud server instances.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-icon red-bg">
+                        ↑
+                    </div>
+
+                    <div>
+
+                        <div class="rule-title">
+                            Scale Up
+
+                            <span>
+                                &gt; 70%
+                            </span>
+                        </div>
+
+                        <p>
+                            Add server instances to handle
+                            increased workload demand.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="limits">
+
+                    <div>
+                        <span>Minimum Servers</span>
+                        <strong>1</strong>
+                    </div>
+
+                    <div>
+                        <span>Maximum Servers</span>
+                        <strong>10</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Server Infrastructure -->
+        <section class="card infrastructure">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-label">
+                        INFRASTRUCTURE
+                    </span>
+
+                    <h2>Cloud Server Instances</h2>
+
+                </div>
+
+                <span class="instance-count">
+                    4 Instances
+                </span>
+
+            </div>
+
+
+            <div class="servers">
+
+
+                <div class="server">
+
+                    <div class="server-icon">
+                        ▣
+                    </div>
+
+                    <div class="server-details">
+
+                        <strong>
+                            Server-01
+                        </strong>
+
+                        <span>
+                            Running
+                        </span>
+
+                    </div>
+
+                    <div class="server-status"></div>
+
+                </div>
+
+
+                <div class="server">
+
+                    <div class="server-icon">
+                        ▣
+                    </div>
+
+                    <div class="server-details">
+
+                        <strong>
+                            Server-02
+                        </strong>
+
+                        <span>
+                            Running
+                        </span>
+
+                    </div>
+
+                    <div class="server-status"></div>
+
+                </div>
+
+
+                <div class="server">
+
+                    <div class="server-icon">
+                        ▣
+                    </div>
+
+                    <div class="server-details">
+
+                        <strong>
+                            Server-03
+                        </strong>
+
+                        <span>
+                            Running
+                        </span>
+
+                    </div>
+
+                    <div class="server-status"></div>
+
+                </div>
+
+
+                <div class="server">
+
+                    <div class="server-icon">
+                        ▣
+                    </div>
+
+                    <div class="server-details">
+
+                        <strong>
+                            Server-04
+                        </strong>
+
+                        <span>
+                            Running
+                        </span>
+
+                    </div>
+
+                    <div class="server-status"></div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Architecture -->
+        <section class="card architecture">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-label">
+                        CLOUD ARCHITECTURE
+                    </span>
+
+                    <h2>Auto Scaling Workflow</h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="workflow">
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        01
+                    </div>
+
+                    <h3>User Request</h3>
+
+                    <p>
+                        Incoming application traffic
+                    </p>
+
+                </div>
+
+
+                <div class="line"></div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        02
+                    </div>
+
+                    <h3>Load Monitor</h3>
+
+                    <p>
+                        CPU utilization monitoring
+                    </p>
+
+                </div>
+
+
+                <div class="line"></div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        03
+                    </div>
+
+                    <h3>Auto Scaling</h3>
+
+                    <p>
+                        Analyze scaling threshold
+                    </p>
+
+                </div>
+
+
+                <div class="line"></div>
+
+
+                <div class="workflow-item">
+
+                    <div class="workflow-number">
+                        04
+                    </div>
+
+                    <h3>Cloud Servers</h3>
+
+                    <p>
+                        Add or remove instances
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            <strong>CloudScale</strong>
+            <span>Cloud-Based Auto Scaling Simulator</span>
+        </div>
+
+        <p>
+            Cloud Computing Mini Project © 2026
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
